@@ -1,0 +1,11 @@
+[build]
+bin = "tmp/main"          
+cmd = "go run main.go"    
+include = ["*.go"]        
+
+[build.ignore]
+dirs = ["tmp", "vendor", "node_modules"]  
+files = [".env", "*.tmp"] 
+
+[log]
+time = "2006-01-02 15:04:05" 
